@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
             }
             if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Steak Knife"))
             {
-                inventory.RemoveItem(new Item("Stek Knife", 1, "Sprite/UISteakKnife"));
+                inventory.RemoveItem(new Item("Steak Knife", 1, "Sprite/UISteakKnife"));
                 inventory.AddItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
             }
             if (objecthit.tag == "Cabnitkey" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Blue Key"))
