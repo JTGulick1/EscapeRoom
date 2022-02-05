@@ -53,6 +53,7 @@ public class Candle : MonoBehaviour
             {
                 Instantiate(greenKey, greenKeySpawnLocation);
                 keySpawned = true;
+                GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.RemoveItem(new Item("Lighter", 1, "Sprite/UILighter"));
             }
         }
     }
