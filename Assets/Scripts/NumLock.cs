@@ -80,6 +80,8 @@ public class NumLock : MonoBehaviour
             if (num1 == 4 && num2 == 3 && num3 == 8 && num4 == 1)
             {
                 GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.AddItem(new Item("Heart Key", 1, "Sprite/UIHeartKey"));
+                GameObject.FindGameObjectWithTag("Safe").SetActive(false);
+                GameObject.FindGameObjectWithTag("SafeOpen").GetComponent<MeshRenderer>().enabled = true;
             }
         }
         if (whatLock == "Cabnit")
@@ -87,6 +89,8 @@ public class NumLock : MonoBehaviour
             if (num1 == 9 && num2 == 3 && num3 == 9 && num4 == 5)
             {
                 GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.AddItem(new Item("Lighter", 1, "Sprite/UILighter"));
+                GameObject.FindGameObjectWithTag("Cabnitpadlock").SetActive(false);
+                GameObject.FindGameObjectWithTag("Cabnitkey").GetComponent<MeshRenderer>().enabled = true;
             }
         }
     }

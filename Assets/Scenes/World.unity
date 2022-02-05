@@ -593,6 +593,24 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b077e28113bcf204cbde6c6b4c329a9b, type: 3}
+--- !u!1 &82591574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32f74842ad021934f8ed39cd81abe746, type: 3}
+  m_PrefabInstance: {fileID: 811159100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &82591575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82591574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8631837, y: 1.4307224, z: 1.9038061}
+  m_Center: {x: 0.03655271, y: -0.000000011739792, z: 0.9856177}
 --- !u!1 &107338512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,13 +2762,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 12.469
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 32f74842ad021934f8ed39cd81abe746, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32f74842ad021934f8ed39cd81abe746, type: 3}
       propertyPath: m_Name
       value: SideCabinetBottomOpen
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32f74842ad021934f8ed39cd81abe746, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32f74842ad021934f8ed39cd81abe746, type: 3}
+      propertyPath: m_TagString
+      value: Cabnitkey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -4384,6 +4410,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 73.241
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5754084199372789682, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4394,11 +4424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
       propertyPath: m_TagString
-      value: Safe
+      value: SafeOpen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
