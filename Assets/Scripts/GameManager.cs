@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Inventory inventory;
     public NumLock numlockSafe;
     public NumLock numlockCabnit;
-
+    public Light UVLight;
     void Update()
     {
         if (Input.mousePosition.x <= 100)
@@ -80,6 +80,10 @@ public class GameManager : MonoBehaviour
                 inventory.RemoveItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
                 inventory.AddItem(new Item("UV Light", 1, "Sprite/UIUVLight"));
             }
+        }
+        if (inventory.ContainsItem("UV Light"))
+        {
+            UVLight.gameObject.SetActive(true);
         }
     }
 
