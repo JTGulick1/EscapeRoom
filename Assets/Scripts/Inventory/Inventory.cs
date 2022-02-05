@@ -26,10 +26,12 @@ public class Inventory : MonoBehaviour
         if (argItem.sprite == invSlot1.sprite)
         {
             invSlot1.sprite = null;
+            slot1 = false;
         }
         else if (argItem.sprite == invSlot2.sprite)
         {
             invSlot2.sprite = null;
+            slot2 = false;
         }
 
         storage.Remove(argItem);
