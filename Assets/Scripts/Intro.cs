@@ -47,5 +47,7 @@ public class Intro : MonoBehaviour
         monologueSound.Stop();
         GameObject.Find("Television").GetComponent<Television>().timerActive = true;
         GameObject.Find("tv light").SetActive(false);
+        GameObject.Find("TV images").GetComponent<Slideshow>().hideEven = false;
+        GameObject.Find("TV images").SetActive(false);
     }
 }

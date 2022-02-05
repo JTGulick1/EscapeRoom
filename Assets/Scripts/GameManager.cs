@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public Camera main;
     private bool tic = false;
     public Candle candles;
-    public Inventory storage;
+    public Inventory inventory;
     public NumLock numlock;
 
     void Update()
