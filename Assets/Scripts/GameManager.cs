@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
                 main.transform.Rotate(0, -1 * Time.fixedDeltaTime, 0);
             }
         }
-        if (Input.mousePosition.x >= 1700)
+        if (Input.mousePosition.x >= Screen.width - 100)
         {
             if (main.transform.rotation.y <= 0.1304f)
             {
