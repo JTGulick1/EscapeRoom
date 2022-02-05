@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4273725640083066380}
   - component: {fileID: 4273725640083066381}
   - component: {fileID: 4273725640083066382}
+  - component: {fileID: -7056946470676519052}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Green Key giver
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7056946470676519052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273725640083066383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d39fad4087e4dbf6007028b3f57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemClass: Green Key
+  stackSize: 1
+  itemSprite: {fileID: 21300000, guid: 92500326076fa2e43b1260c059697a5c, type: 3}
+  destroyWholeObjectAfterGive: 1

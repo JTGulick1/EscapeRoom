@@ -15,4 +15,11 @@ public class Item
         stackSize = argStackSize;
         sprite = Resources.Load<Sprite>(argSprite);
     }
+
+    public Item(string argClass, int argStackSize, Sprite argSprite)
+    {
+        itemClass = argClass;
+        stackSize = argStackSize;
+        sprite = argSprite;
+    }
 }
