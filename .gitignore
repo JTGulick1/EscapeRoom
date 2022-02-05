@@ -64,3 +64,4 @@ Logs
 *.csproj
 *.sln
 obj
+UserSettings/EditorUserSettings.asset

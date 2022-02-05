@@ -3238,22 +3238,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01, z: 0.010965742}
   m_Center: {x: 0, y: 0, z: 0.0004828712}
---- !u!114 &980497709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980497704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d87d39fad4087e4dbf6007028b3f57b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemClass: Blue Key
-  stackSize: 1
-  itemSprite: {fileID: 21300000, guid: 824cecd64e83c3144968985fe0ef137f, type: 3}
-  destroyWholeObjectAfterGive: 0
 --- !u!1 &986607587
 GameObject:
   m_ObjectHideFlags: 0
