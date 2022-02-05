@@ -7,9 +7,12 @@ public class Item
     string itemClass = "Item";
     int stackSize = 1;
 
-    public Item(string argClass, int argStackSize)
+    Sprite sprite;
+
+    public Item(string argClass, int argStackSize, string argSprite)
     {
         itemClass = argClass;
         stackSize = argStackSize;
+        sprite = Resources.Load<Sprite>(argSprite);
     }
 }
