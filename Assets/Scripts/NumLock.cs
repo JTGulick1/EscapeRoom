@@ -7,6 +7,7 @@ public class NumLock : MonoBehaviour
 {
     public int num1, num2, num3, num4;
     public Text number;
+    public string whatLock;
 
     public void Start()
     {
@@ -70,18 +71,22 @@ public class NumLock : MonoBehaviour
             }
         }
         number.text = "  " + num1 + "  " + num2 + "   " + num3 + "  " + num4;
-        if (this.gameObject.tag == "Safe")
+        CheckLock();
+    }
+    public void CheckLock()
+    {
+        if (whatLock == "Safe")
         {
             if (num1 == 4 && num2 == 3 && num3 == 8 && num4 == 1)
             {
-                //Guve Player key and destroy keypad
+                GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.AddItem(new Item("Heart Key", 1, "Sprite/UIHeartKey"));
             }
         }
-        if (this.gameObject.tag == "Cabnitpadlock")
+        if (whatLock == "Cabnit")
         {
             if (num1 == 9 && num2 == 3 && num3 == 9 && num4 == 5)
             {
-                //Guve Player key and destroy keypad
+                GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.AddItem(new Item("Lighter", 1, "Sprite/UILighter"));
             }
         }
     }

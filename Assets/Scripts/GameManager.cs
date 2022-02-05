@@ -17,14 +17,14 @@ public class GameManager : MonoBehaviour
         {
             if (main.transform.rotation.y >= -0.1304f)
             {
-                main.transform.Rotate(0, -1 * Time.fixedDeltaTime, 0);
+                main.transform.Rotate(0, -1.5f * Time.fixedDeltaTime, 0);
             }
         }
         if (Input.mousePosition.x >= Screen.width - 100)
         {
             if (main.transform.rotation.y <= 0.1304f)
             {
-                main.transform.Rotate(0, 1 * Time.fixedDeltaTime, 0);
+                main.transform.Rotate(0, 1.5f * Time.fixedDeltaTime, 0);
             }
         }
         Ray ray = main.ScreenPointToRay(Input.mousePosition);
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
                     cleanup[i].GetComponent<Renderer>().material.SetColor(/*cleanup[i].GetComponent<Renderer>().name, cleanup[i].GetComponent<Renderer>().material.color */ "_Color", Color.white);
                 }
             }
-            if (objecthit.tag == "Candle" && Input.GetMouseButtonDown(0))
+            if (objecthit.tag == "Candle" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Lighter"))
             {
                 candles.CandleGame(objecthit.name);
             }

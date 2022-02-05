@@ -26,10 +26,12 @@ public class Inventory : MonoBehaviour
         if (argItem.sprite == invSlot1.sprite)
         {
             invSlot1.sprite = null;
+            slot1 = false;
         }
         else if (argItem.sprite == invSlot2.sprite)
         {
             invSlot2.sprite = null;
+            slot2 = false;
         }
 
         storage.Remove(argItem);
@@ -38,6 +40,18 @@ public class Inventory : MonoBehaviour
     public bool ContainsItem(Item argItem)
     {
         return storage.Contains(argItem);
+    }
+
+    public bool ContainsItem(string argItemClass)
+    {
+        foreach (Item item in storage)
+        {
+            if (item.itemClass == argItemClass)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void GrabbedItem(Item argItem)

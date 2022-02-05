@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.071616165, g: 0.07917718, b: 0.09218382, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -737,6 +737,8 @@ MonoBehaviour:
   fadeInSpeed: 0.4
   blackFadeIn: {fileID: 1401960942}
   monologueSound: {fileID: 1896261551}
+  lossCanvas: {fileID: 0}
+  gameTime: 800
 --- !u!1 &140450493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1083,7 @@ MonoBehaviour:
   num3: 0
   num4: 0
   number: {fileID: 1226022970}
+  whatLock: Cabnit
 --- !u!114 &183810175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,6 +2005,7 @@ MonoBehaviour:
   num3: 0
   num4: 0
   number: {fileID: 590379760}
+  whatLock: Safe
 --- !u!114 &497724870
 MonoBehaviour:
   m_ObjectHideFlags: 0
