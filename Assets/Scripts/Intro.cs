@@ -21,8 +21,6 @@ public class Intro : MonoBehaviour
         blackFadeIn.SetActive(true);
         StartCoroutine(FadeIn());
         StartCoroutine(Monologue());
-        lossCanvas = GameObject.Instantiate(Resources.Load<GameObject>("LossCanvas"));
-        lossCanvas.SetActive(false);
     }
 
     // Update is called once per frame
