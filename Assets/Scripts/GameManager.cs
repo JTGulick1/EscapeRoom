@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     public Light UVLight;
     public Material uvWallMaterial;
 
+    bool knifeObtained = false;
+    bool blueKeyObtained = false;
+    bool uvObtained = false;
+    bool greenkeyObtained = false;
+    bool heartkeyObtained = false;
+
     void Update()
     {
         if (Input.mousePosition.x <= 100)
@@ -72,18 +78,21 @@ public class GameManager : MonoBehaviour
             {
                 numlockCabnit.ResetLock();
             }
-            if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Steak Knife"))
+            if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Steak Knife") && !blueKeyObtained)
             {
-                inventory.RemoveItem(new Item("Stek Knife", 1, "Sprite/UISteakKnife"));
+                blueKeyObtained = true;
+                inventory.RemoveItem(new Item("Steak Knife", 1, "Sprite/UISteakKnife"));
                 inventory.AddItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
             }
-            if (objecthit.tag == "Cabnitkey" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Blue Key"))
+            if (objecthit.tag == "Cabnitkey" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Blue Key") && !uvObtained)
             {
+                uvObtained = true;
                 inventory.RemoveItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
                 inventory.AddItem(new Item("UV Light", 1, "Sprite/UIUVLight"));
             }
-            if (objecthit.tag == "Glass" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Green Key"))
+            if (objecthit.tag == "Glass" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Green Key") && !knifeObtained)
             {
+                knifeObtained = true;
                 inventory.RemoveItem(new Item("Green Key", 1, "Sprite/UIGreenKey"));
                 inventory.AddItem(new Item("Steak Knife", 1, "Sprite/UISteakKnife"));
             }

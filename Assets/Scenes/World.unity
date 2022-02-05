@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.071616165, g: 0.07917718, b: 0.09218382, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 708193133eb1067429b34c8a2029e05d, type: 2}
     - target: {fileID: 919132149155446097, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
       propertyPath: m_Name
       value: Candle[5]
@@ -548,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b077e28113bcf204cbde6c6b4c329a9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0194
+      value: 1.0257
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b077e28113bcf204cbde6c6b4c329a9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -586,6 +590,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b077e28113bcf204cbde6c6b4c329a9b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7e3900ec51da734ca530873a3fa59f9, type: 2}
     - target: {fileID: 919132149155446097, guid: b077e28113bcf204cbde6c6b4c329a9b, type: 3}
       propertyPath: m_Name
       value: Spoon_low
@@ -2240,6 +2248,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d2e9c09b89b8cca41b3fe00d3aba2d06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c81707bb55015b49b245eab83cbc40f, type: 2}
     - target: {fileID: 919132149155446097, guid: d2e9c09b89b8cca41b3fe00d3aba2d06, type: 3}
       propertyPath: m_Name
       value: ChinaCabinet_low
@@ -2704,6 +2716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 708193133eb1067429b34c8a2029e05d, type: 2}
     - target: {fileID: 919132149155446097, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
       propertyPath: m_Name
       value: Candle[4]
@@ -2805,6 +2821,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b3c3774556119d54a8f7fd33538d250d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dcd4cdfc90f60d4f84d4840e7758a44, type: 2}
     - target: {fileID: 919132149155446097, guid: b3c3774556119d54a8f7fd33538d250d, type: 3}
       propertyPath: m_Name
       value: Door_low
@@ -2880,6 +2900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f468b286d4384144be4859255ab2928, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c3f8378d409746240bdb0004c89e052a, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f468b286d4384144be4859255ab2928, type: 3}
       propertyPath: m_Name
       value: SteakCut_low
@@ -2955,6 +2979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 65.697
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92e445649276abd45bd5fc1b4650a9c4, type: 2}
     - target: {fileID: 919132149155446097, guid: 9828732aa1b0f00469c59ef0f0bc87e7, type: 3}
       propertyPath: m_Name
       value: Safe_low
@@ -3462,6 +3490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b9b7f07ae22fcc243bb7c0bb1df26c10, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f72d582ae45005443a0a1caddcba9491, type: 2}
     - target: {fileID: 919132149155446097, guid: b9b7f07ae22fcc243bb7c0bb1df26c10, type: 3}
       propertyPath: m_Name
       value: Television
@@ -3853,6 +3885,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3cb025ce331887c4c8bb95f069646844, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54e71b07f2466aa4e9c79b40e5101b13, type: 2}
     - target: {fileID: 919132149155446097, guid: 3cb025ce331887c4c8bb95f069646844, type: 3}
       propertyPath: m_Name
       value: Fork_low
@@ -4409,9 +4445,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ae025a4d3311d6743869121723f14359, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04a698491413c6b46bacd3967b3575a2, type: 2}
     - target: {fileID: 919132149155446097, guid: ae025a4d3311d6743869121723f14359, type: 3}
       propertyPath: m_Name
       value: Steak_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae025a4d3311d6743869121723f14359, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae025a4d3311d6743869121723f14359, type: 3}
       propertyPath: m_TagString
@@ -4484,6 +4528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 001ff26f852647a42b5962c0011020cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 62a6855d0c96e6a448ad23fcd2887b70, type: 2}
     - target: {fileID: 919132149155446097, guid: 001ff26f852647a42b5962c0011020cd, type: 3}
       propertyPath: m_Name
       value: Table_low
@@ -5016,6 +5064,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 19631004e19f5074690734adc18d3abf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2cd8a4bdfc43fb143988ccf6fa0a754b, type: 2}
     - target: {fileID: 919132149155446097, guid: 19631004e19f5074690734adc18d3abf, type: 3}
       propertyPath: m_Name
       value: Plate_low
@@ -5484,6 +5536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 708193133eb1067429b34c8a2029e05d, type: 2}
     - target: {fileID: 919132149155446097, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
       propertyPath: m_Name
       value: Candle[1]
@@ -5706,6 +5762,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea1ccc216cc0829489a738b9097198a3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a21a874ce720e5243bd703f34adde943, type: 2}
     - target: {fileID: 919132149155446097, guid: ea1ccc216cc0829489a738b9097198a3, type: 3}
       propertyPath: m_Name
       value: Knife_low
@@ -6357,6 +6417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4261453a0bb1e894f9fc9d1b4efa6dfb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35c3d5b722f26cd4ea55673d21d89a81, type: 2}
     - target: {fileID: 919132149155446097, guid: 4261453a0bb1e894f9fc9d1b4efa6dfb, type: 3}
       propertyPath: m_Name
       value: ChinaCabinetGlass_low
@@ -6548,6 +6612,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 12.469
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4468e2beff03e044da72bddeecd75e30, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2870b6a313763134ca43831e00a23910, type: 2}
     - target: {fileID: 919132149155446097, guid: 4468e2beff03e044da72bddeecd75e30, type: 3}
       propertyPath: m_Name
       value: SideCabinet_low
@@ -6980,6 +7048,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 708193133eb1067429b34c8a2029e05d, type: 2}
     - target: {fileID: 919132149155446097, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
       propertyPath: m_Name
       value: Candle[2]
@@ -7131,6 +7203,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 708193133eb1067429b34c8a2029e05d, type: 2}
     - target: {fileID: 919132149155446097, guid: d472237f937acf84b80298a61fa6ca7e, type: 3}
       propertyPath: m_Name
       value: Candle[3]
