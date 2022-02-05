@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class Television : MonoBehaviour
 {
-    float timerValue = 60;
-    float timer = 0;
-    bool timerActive = false;
+    public float timerValue = 60;
+    float timer;
+    public bool timerActive = false;
 
-    GameObject tvObject;
-    GameObject cameraBlink;
-    GameObject tvLight;
-
-    AudioSource monologueSound;
-    AudioSource cameraBeep;
+    public GameObject tvObject;
+    public GameObject cameraBlink;
+    public GameObject tvLight;
+    public AudioSource cameraBeep;
 
     private void Awake()
     {
-        
+        timer = timerValue;
     }
 
     void Start()
@@ -77,5 +75,11 @@ public class Television : MonoBehaviour
         tvObject.transform.GetChild(0).gameObject.SetActive(false);
         tvLight.SetActive(false);
         cameraBlink.SetActive(false);
+
+        //reset the timer
+        timer = timerValue;
+        timerActive = true;
     }
+
+    
 }
