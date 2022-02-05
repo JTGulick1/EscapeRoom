@@ -6,9 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public Camera main;
     private bool tic = false;
-    public GameObject[] candles;
-    public bool candle1, candle3, candle5 = false; public bool candle2, candle4 = true;
-    public GameObject greenKey;
+    public Candle candles;
+
     void Update()
     {
         if (Input.mousePosition.x <= 100)
@@ -47,53 +46,9 @@ public class GameManager : MonoBehaviour
             }
             if (objecthit.tag == "Candle" && Input.GetMouseButtonDown(0))
             {
-                if (objecthit.name == "Candle[1]")
-                {
-                    candle1 = Flip(candle1);
-                    candle2 = Flip(candle2);
-                }
-                if (objecthit.name == "Candle[2]")
-                {
-                    candle1 = Flip(candle1);
-                    candle2 = Flip(candle2);
-                    candle3 = Flip(candle3);
-                }
-                if (objecthit.name == "Candle[3]")
-                {
-                    candle2 = Flip(candle2);
-                    candle3 = Flip(candle3);
-                    candle4 = Flip(candle4);
-                }
-                if (objecthit.name == "Candle[4]")
-                {
-                    candle3 = Flip(candle3);
-                    candle4 = Flip(candle4);
-                    candle5 = Flip(candle5);
-                }
-                if (objecthit.name == "Candle[5]")
-                {
-                    candle4 = Flip(candle4);
-                    candle5 = Flip(candle5);
-                }
-                if (candle1 == true && candle2 == true && candle3 == true && candle4 == true && candle5 == true)
-                {
-                    Instantiate(greenKey, candles[3].transform.position, candles[3].transform.rotation);
-                }
+                candles.CandleGame(objecthit.name);
             }
         }
     }
-    bool Flip(bool toc)
-    {
-        if (toc == false)
-        {
-            toc = true;
-            return toc;
-        }
-        if (toc == true)
-        {
-            toc = false;
-            return toc;
-        }
-        return toc;
-    }
+ 
 }

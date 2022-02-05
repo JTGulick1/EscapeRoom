@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\Candle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

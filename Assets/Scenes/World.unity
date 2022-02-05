@@ -158,18 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 308263271}
-  candles:
-  - {fileID: 1284568601}
-  - {fileID: 1114089579}
-  - {fileID: 685330493}
-  - {fileID: 701945343}
-  - {fileID: 1685177518}
-  candle1: 0
-  candle3: 0
-  candle5: 0
-  candle2: 1
-  candle4: 1
-  greenKey: {fileID: 4273725640083066383, guid: 3038d2dd66e16394dbf9b670860ad21e, type: 3}
+  candles: {fileID: 2076464417}
 --- !u!4 &278503893
 Transform:
   m_ObjectHideFlags: 0
@@ -183,7 +172,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308263270
 GameObject:
@@ -697,7 +686,7 @@ Transform:
   - {fileID: 1685177522}
   - {fileID: 151159780}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &986607587
 GameObject:
@@ -1277,6 +1266,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 818884528}
   m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2076464416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076464418}
+  - component: {fileID: 2076464417}
+  m_Layer: 0
+  m_Name: CandleGm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2076464417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076464416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9639937c371e52f4aa079f6240b14a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candles:
+  - {fileID: 1284568601}
+  - {fileID: 1114089579}
+  - {fileID: 685330493}
+  - {fileID: 701945343}
+  - {fileID: 1685177518}
+  candle1: 0
+  candle3: 0
+  candle5: 0
+  candle2: 1
+  candle4: 1
+  greenKey: {fileID: 4273725640083066383, guid: 3038d2dd66e16394dbf9b670860ad21e, type: 3}
+--- !u!4 &2076464418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076464416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 3.775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118503638
 GameObject:
