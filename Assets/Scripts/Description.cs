@@ -5,5 +5,5 @@ using UnityEngine;
 //object description storage
 public class Description : MonoBehaviour
 {
-    string description;
+    public string description;
 }

@@ -23,6 +23,15 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(Item argItem)
     {
+        if (argItem.sprite == invSlot1.sprite)
+        {
+            invSlot1.sprite = null;
+        }
+        else if (argItem.sprite == invSlot2.sprite)
+        {
+            invSlot2.sprite = null;
+        }
+
         storage.Remove(argItem);
     }
 

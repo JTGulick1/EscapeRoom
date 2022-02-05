@@ -43,6 +43,11 @@ public class GameManager : MonoBehaviour
                 inventory.AddItem(objecthit.GetComponent<ItemGiver>().GetItem());
 
             }
+            if (objecthit.GetComponent<Description>() != null && Input.GetMouseButtonDown(1))
+            {
+                Debug.Log("Description: " + objecthit.GetComponent<Description>().description);
+            }
+
             if (objecthit.tag == "BG" && tic == true)
             {
                 GameObject[] cleanup;
