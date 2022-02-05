@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BG
+  - Candle
+  - Item
+  - Safe
+  - Cabnitpadlock
+  - Cabnitkey
   layers:
   - Default
   - TransparentFX

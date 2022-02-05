@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     private bool tic = false;
     public Candle candles;
     public Inventory inventory;
-    public NumLock numlock;
+    public NumLock numlockSafe;
+    public NumLock numlockCabnit;
 
     void Update()
     {
@@ -57,7 +58,11 @@ public class GameManager : MonoBehaviour
             }
             if (objecthit.tag == "Safe" && Input.GetMouseButtonDown(0))
             {
-                numlock.ResetLock();
+                numlockSafe.ResetLock();
+            }
+            if (objecthit.tag == "Cabnitpadlock" && Input.GetMouseButtonDown(0))
+            {
+                numlockCabnit.ResetLock();
             }
         }
     }

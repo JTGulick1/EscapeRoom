@@ -70,9 +70,19 @@ public class NumLock : MonoBehaviour
             }
         }
         number.text = "  " + num1 + "  " + num2 + "   " + num3 + "  " + num4;
-        if (num1 == 4 && num2 == 3 && num3 == 8 && num4 == 1)
+        if (this.gameObject.tag == "Safe")
         {
-            //Guve Player key and destroy keypad
+            if (num1 == 4 && num2 == 3 && num3 == 8 && num4 == 1)
+            {
+                //Guve Player key and destroy keypad
+            }
+        }
+        if (this.gameObject.tag == "Cabnitpadlock")
+        {
+            if (num1 == 9 && num2 == 3 && num3 == 9 && num4 == 5)
+            {
+                //Guve Player key and destroy keypad
+            }
         }
     }
 }
