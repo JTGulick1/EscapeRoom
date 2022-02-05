@@ -1307,6 +1307,7 @@ MonoBehaviour:
   inventory: {fileID: 1930590889}
   numlockSafe: {fileID: 497724869}
   numlockCabnit: {fileID: 183810174}
+  UVLight: {fileID: 0}
 --- !u!4 &278503893
 Transform:
   m_ObjectHideFlags: 0
@@ -1553,7 +1554,7 @@ GameObject:
   - component: {fileID: 308970995}
   - component: {fileID: 308970994}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: BackWall
   m_TagString: BG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
