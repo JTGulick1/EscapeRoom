@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public NumLock numlockSafe;
     public NumLock numlockCabnit;
     public Light UVLight;
+    public Material uvWallMaterial;
+
     void Update()
     {
         if (Input.mousePosition.x <= 100)
@@ -69,10 +72,9 @@ public class GameManager : MonoBehaviour
             {
                 numlockCabnit.ResetLock();
             }
-            if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Knife"))
+            if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Steak Knife"))
             {
-                GameObject.Find("Steak_low").SetActive(false);
-                GameObject.Find("SteakCut_low").SetActive(true);
+                inventory.RemoveItem(new Item("Stek Knife", 1, "Sprite/UISteakKnife"));
                 inventory.AddItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
             }
             if (objecthit.tag == "Cabnitkey" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Blue Key"))
@@ -80,10 +82,21 @@ public class GameManager : MonoBehaviour
                 inventory.RemoveItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
                 inventory.AddItem(new Item("UV Light", 1, "Sprite/UIUVLight"));
             }
+            if (objecthit.tag == "Glass" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Green Key"))
+            {
+                inventory.RemoveItem(new Item("Green Key", 1, "Sprite/UIGreenKey"));
+                inventory.AddItem(new Item("Steak Knife", 1, "Sprite/UISteakKnife"));
+            }
+            if (objecthit.tag == "Door" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Heart Key"))
+            {
+                inventory.RemoveItem(new Item("Heart Key", 1, "Sprite/UIHeartKey"));
+                SceneManager.LoadScene("Main Menu");
+            }
         }
         if (inventory.ContainsItem("UV Light"))
         {
             UVLight.gameObject.SetActive(true);
+            GameObject.Find("BackWall").GetComponent<MeshRenderer>().material = uvWallMaterial;
         }
     }
 

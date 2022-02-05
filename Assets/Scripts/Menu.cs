@@ -17,12 +17,10 @@ public class Menu : MonoBehaviour
     }
     public void Credits()
     {
-        menu.SetActive(false);
         credits.SetActive(true);
     }
     public void MainMenu()
     {
-        menu.SetActive(true);
         credits.SetActive(false);
     }
     public void Quit()
