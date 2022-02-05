@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Inventory inventory;
     public NumLock numlock;
 
+    public int interactMode = 0;
+
     void Update()
     {
         if (Input.mousePosition.x <= 100)
@@ -37,9 +39,13 @@ public class GameManager : MonoBehaviour
                 objecthit.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                 tic = true;
             }
-            if (objecthit.GetComponent<ItemGiver>() != null && Input.GetMouseButtonDown(0))
+            if (objecthit.GetComponent<ItemGiver>() != null && Input.GetMouseButtonDown(0) && interactMode == 0)
             {
                 inventory.AddItem(objecthit.GetComponent<ItemGiver>().GetItem());
+
+            }
+            if (objecthit.GetComponent<Description>() != null && Input.GetMouseButtonDown(0) && interactMode == 1)
+            {
 
             }
             if (objecthit.tag == "BG" && tic == true)
