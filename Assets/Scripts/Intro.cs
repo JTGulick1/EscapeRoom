@@ -12,18 +12,31 @@ public class Intro : MonoBehaviour
 
     public AudioSource monologueSound;
 
+    public GameObject lossCanvas;
+    public float gameTime = 800.0f;
+
 
     private void Awake()
     {
         blackFadeIn.SetActive(true);
         StartCoroutine(FadeIn());
         StartCoroutine(Monologue());
+        lossCanvas = GameObject.Instantiate(Resources.Load<GameObject>("LossCanvas"));
+        lossCanvas.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameTime > 0)
+        {
+            gameTime -= Time.deltaTime;
+        }
+        else if (gameTime <= 0)
+        {
+            lossCanvas.SetActive(true);
+            lossCanvas.transform.GetChild(0).GetChild(2).gameObject.SetActive(true);
+        }
     }
 
     IEnumerator FadeIn()
@@ -49,5 +62,6 @@ public class Intro : MonoBehaviour
         GameObject.Find("tv light").SetActive(false);
         GameObject.Find("TV images").GetComponent<Slideshow>().hideEven = false;
         GameObject.Find("TV images").SetActive(false);
+        GameObject.Find("camera dot").SetActive(false);
     }
 }

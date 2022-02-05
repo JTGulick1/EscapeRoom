@@ -77,6 +77,8 @@ public class Television : MonoBehaviour
         {
             //lose game logic
             Debug.Log("player was caught not watching TV!");
+            GameObject.Find("LossCanvas").SetActive(true);
+            GameObject.Find("LossCanvas").transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
         }
         else
         {
