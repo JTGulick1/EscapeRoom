@@ -37,6 +37,23 @@ public class Television : MonoBehaviour
         }
     }
 
+    bool MouseOverTV()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            if (hit.transform.gameObject.name == "Television" || hit.transform.gameObject.name == "TV images")
+            {
+                return true;
+            }
+            else
+            {
+                Debug.Log("TV mouse check: hit " + hit.transform.gameObject.name);
+            }
+        }
+        return false;
+    }
+
     IEnumerator CheckSequence()
     {
         //check in on the player
@@ -44,29 +61,26 @@ public class Television : MonoBehaviour
         //camera windup
         cameraBeep.Play();
         cameraBlink.SetActive(true);
-        yield return new WaitForSeconds(4.626f);
 
         //enable TV images
-        cameraBeep.Stop();
         tvObject.transform.GetChild(0).gameObject.SetActive(true);
         tvLight.SetActive(true);
 
+        //wait for camera beep to end
+        yield return new WaitForSeconds(4.626f);
+
+        
+        cameraBeep.Stop();
+
         //check if player is pointing over TV
-        bool pass = false;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
-        {
-            Transform objecthit = hit.transform;
-
-            if (objecthit.name == "Television")
-            {
-                pass = true;
-            }
-        }
-
-        if (!pass)
+        if (MouseOverTV() == false)
         {
             //lose game logic
+            Debug.Log("player was caught not watching TV!");
+        }
+        else
+        {
+            Debug.Log("player passed TV check");
         }
 
         yield return new WaitForSeconds(5);

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public Camera main;
     private bool tic = false;
     public Candle candles;
+    public Inventory storage;
 
     void Update()
     {
@@ -35,6 +36,11 @@ public class GameManager : MonoBehaviour
                 objecthit.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                 tic = true;
             }
+            if (objecthit.tag == "Item" && Input.GetMouseButtonDown(0))
+            {
+                storage.GrabbedItem(objecthit.name);
+
+            }
             if (objecthit.tag == "BG" && tic == true)
             {
                 GameObject[] cleanup;
@@ -50,5 +56,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
- 
+
 }

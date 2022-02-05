@@ -29,9 +29,10 @@ public class Intro : MonoBehaviour
     IEnumerator FadeIn()
     {
         Image blackFadeImage = blackFadeIn.GetComponent<Image>();
-        while (blackFadeImage.color.a < 0)
+        while (blackFadeImage.color.a > 0)
         {
             blackFadeImage.color = new Color(blackFadeImage.color.r, blackFadeImage.color.g, blackFadeImage.color.b, blackFadeImage.color.a - (Time.deltaTime * fadeInSpeed));
+            yield return new WaitForEndOfFrame();
         }
         yield return null;
     }
@@ -40,5 +41,11 @@ public class Intro : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         monologueSound.Play();
+        yield return new WaitForSeconds(35);
+
+        //start game logic stuffs
+        monologueSound.Stop();
+        GameObject.Find("Television").GetComponent<Television>().timerActive = true;
+        GameObject.Find("tv light").SetActive(false);
     }
 }
