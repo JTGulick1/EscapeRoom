@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public Camera main;
     private bool tic = false;
     public Candle candles;
+    public Inventory storage;
 
     void Update()
     {
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
                 main.transform.Rotate(0, -1 * Time.fixedDeltaTime, 0);
             }
         }
-        if (Input.mousePosition.x >= 1700)
+        if (Input.mousePosition.x >= Screen.width - 100)
         {
             if (main.transform.rotation.y <= 0.1304f)
             {
@@ -34,6 +35,11 @@ public class GameManager : MonoBehaviour
             {
                 objecthit.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
                 tic = true;
+            }
+            if (objecthit.tag == "Item" && Input.GetMouseButtonDown(0))
+            {
+                storage.GrabbedItem(objecthit.name);
+
             }
             if (objecthit.tag == "BG" && tic == true)
             {
