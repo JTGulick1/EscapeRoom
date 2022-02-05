@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.071616165, g: 0.07917718, b: 0.09218382, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3224,6 +3224,7 @@ MonoBehaviour:
   cameraBlink: {fileID: 1791337966}
   tvLight: {fileID: 1253978087}
   cameraBeep: {fileID: 1842298041}
+  lossCanvas: {fileID: 0}
 --- !u!65 &980497708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4123,6 +4124,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ae025a4d3311d6743869121723f14359, type: 3}
       propertyPath: m_Name
       value: Steak_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae025a4d3311d6743869121723f14359, type: 3}
+      propertyPath: m_TagString
+      value: Steak
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

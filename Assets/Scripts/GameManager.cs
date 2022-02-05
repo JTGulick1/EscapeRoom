@@ -69,6 +69,10 @@ public class GameManager : MonoBehaviour
             {
                 numlockCabnit.ResetLock();
             }
+            if (objecthit.tag == "Steak" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Knife"))
+            {
+
+            }
         }
     }
 
