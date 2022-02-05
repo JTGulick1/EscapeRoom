@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Item
 {
-    string itemClass = "Item";
+    public string itemClass = "Item";
     int stackSize = 1;
 
-    Sprite sprite;
+    public Sprite sprite;
 
     public Item(string argClass, int argStackSize, string argSprite)
     {

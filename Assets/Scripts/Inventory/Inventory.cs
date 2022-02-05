@@ -7,7 +7,8 @@ public class Inventory : MonoBehaviour
     List<Item> storage = new List<Item>();
     public Image invSlot1;
     public Image invSlot2;
-
+    bool slot1 = false;
+    bool slot2 = false;
     private void Awake()
     {
         AddItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
@@ -35,11 +36,22 @@ public class Inventory : MonoBehaviour
 
     public void GrabbedItem(string name)
     {
-        for (int i = 0; i < storage.Count; i++)
+        foreach (Item item in storage)
         {
-            if (name == "")
+            if (item.itemClass == name)
             {
-
+                if (slot1 == false)
+                {
+                    invSlot1.sprite = item.sprite;
+                    slot1 = true;
+                    return;
+                }
+                if (slot2 == false)
+                {
+                    invSlot2.sprite = item.sprite;
+                    slot2 = true;
+                    return;
+                }
             }
         }
     }
