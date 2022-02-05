@@ -13,6 +13,8 @@ public class Television : MonoBehaviour
     public GameObject tvLight;
     public AudioSource cameraBeep;
 
+    public GameObject lossCanvas;
+
     private void Awake()
     {
         timer = timerValue;
@@ -77,8 +79,9 @@ public class Television : MonoBehaviour
         {
             //lose game logic
             Debug.Log("player was caught not watching TV!");
-            GameObject.Find("LossCanvas").SetActive(true);
-            GameObject.Find("LossCanvas").transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+            lossCanvas.SetActive(true);
+            lossCanvas.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+            timerActive = false;
         }
         else
         {
