@@ -75,6 +75,11 @@ public class GameManager : MonoBehaviour
                 GameObject.Find("SteakCut_low").SetActive(true);
                 inventory.AddItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
             }
+            if (objecthit.tag == "Cabnitkey" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Blue Key"))
+            {
+                inventory.RemoveItem(new Item("Blue Key", 1, "Sprite/UIBlueKey"));
+                inventory.AddItem(new Item("UV Light", 1, "Sprite/UIUVLight"));
+            }
         }
     }
 
