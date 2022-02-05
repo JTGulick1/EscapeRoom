@@ -42,6 +42,18 @@ public class Inventory : MonoBehaviour
         return storage.Contains(argItem);
     }
 
+    public bool ContainsItem(string argItemClass)
+    {
+        foreach (Item item in storage)
+        {
+            if (item.itemClass == argItemClass)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void GrabbedItem(Item argItem)
     {
         foreach (Item item in storage)

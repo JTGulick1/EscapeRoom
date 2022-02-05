@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
                     cleanup[i].GetComponent<Renderer>().material.SetColor(/*cleanup[i].GetComponent<Renderer>().name, cleanup[i].GetComponent<Renderer>().material.color */ "_Color", Color.white);
                 }
             }
-            if (objecthit.tag == "Candle" && Input.GetMouseButtonDown(0))
+            if (objecthit.tag == "Candle" && Input.GetMouseButtonDown(0) && inventory.ContainsItem("Lighter"))
             {
                 candles.CandleGame(objecthit.name);
             }
