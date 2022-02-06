@@ -78,7 +78,7 @@ public class NumLock : MonoBehaviour
         if (whatLock == "Safe")
         {
             if (num1 == 4 && num2 == 3 && num3 == 8 && num4 == 1)
-            {
+            {   
                 GameObject.Find("Gamemanager").GetComponent<GameManager>().inventory.AddItem(new Item("Heart Key", 1, "Sprite/UIHeartKey"));
                 GameObject.FindGameObjectWithTag("Safe").SetActive(false);
                 GameObject.FindGameObjectWithTag("SafeOpen").GetComponent<MeshRenderer>().enabled = true;
